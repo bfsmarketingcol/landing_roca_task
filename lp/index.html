@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta name="facebook-domain-verification" content="nlpdefbknw95k6rxrm0x1fhqt62pcn" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Roca: el superpoder de no olvidar tareas | 30 días gratis</title>
+  <meta name="description" content="El sistema para que tú y tu equipo no olviden nada. Crea tareas desde WhatsApp, asigna responsables, define fechas y recibe recordatorios automáticos. 30 días gratis." />
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="Roca: el superpoder de no olvidar" />
+  <meta property="og:description" content="Para que tú y tu equipo no olviden nada. Tareas con responsables, fechas y recordatorios (sin cambiar de WhatsApp). 30 días gratis." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rocataskmanager.com/" />
+  <meta property="og:image" content="https://rocataskmanager.com/assets/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Roca: el superpoder de no olvidar" />
+  <meta name="twitter:description" content="Para que tú y tu equipo no olviden nada. Tareas + responsables + recordatorios (sin salir de WhatsApp)." />
+  <meta name="twitter:image" content="https://rocataskmanager.com/assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-52HLJCHS');</script>
+<!-- End Google Tag Manager -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #25d366;
+    }
+
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-bounce-slow { animation: bounce-slow 3s infinite; }
+
+    .fade-in { animation: fadeIn 0.8s ease-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid rgba(37, 211, 102, 0.6);
+      outline-offset: 3px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52HLJCHS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- Config -->
+  <script>
+    window.ROCA_CONFIG = {
+      whatsappNumber: "573118981443",
+      whatsappText: "Hola! Quiero agendar una demo de Roca para mi negocio y activar mi prueba gratis de 30 días.",
+      demoVideoUrl: "",
+      contactWebhookUrl: "https://n8n.srv1173394.hstgr.cloud/webhook/44088149-b8e4-49d7-9146-1cc47fb9baad",
+      thankYouPath: "gracias.html"
+    };
+  </script>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+  <img src="assets/Logo-roca-task.png" alt="Roca Task Manager" class="h-10 w-auto object-contain" />
+  <div class="leading-tight">
+    <span class="font-bold text-xl tracking-tight text-gray-900 block">Roca Task Manager</span>
+    <span class="text-xs text-gray-500 font-medium block -mt-0.5">El superpoder de no olvidar</span>
+  </div>
+</div>
+
+
+      <nav class="hidden md:flex gap-8 font-medium text-sm text-gray-600">
+        <a href="#inicio" class="hover:text-black transition-colors">Inicio</a>
+        <a href="#como-funciona" class="hover:text-black transition-colors">Cómo funciona</a>
+        <a href="#servicios" class="hover:text-black transition-colors">Qué resuelve</a>
+        <a href="#para-quien" class="hover:text-black transition-colors">Para quién es</a>
+        <a href="#faq" class="hover:text-black transition-colors">FAQ</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a data-cta="header_whatsapp" href="#"
+           class="boton_demo inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-gray-900 bg-gray-100 hover:bg-gray-200 transition">
+          Agendar Demo (30 Días Gratis)
+        </a>
+      </div>
+
+      <button class="md:hidden" aria-label="Abrir menú" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b shadow-lg p-4 flex flex-col gap-4">
+      <a href="#inicio">Inicio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#servicios">Qué resuelve</a>
+      <a href="#para-quien">Para quién es</a>
+      <a href="#faq">FAQ</a>
+      <a data-cta="mobile_whatsapp" href="#"
+         class="boton_demo w-full text-center py-3 rounded-lg font-bold text-gray-900 bg-gray-100">Agendar Demo (30 Días Gratis)</a>
+    </div>
+  </header>
+
+<!-- Hero (WHY → HOW → WHAT) -->
+<section id="inicio" class="relative min-h-[640px] flex items-center justify-center text-center px-4 overflow-hidden bg-gray-900">
+  <div class="absolute inset-0 z-0">
+    <img src="assets/hero-bg.jpeg" alt="Equipo organizando tareas con Roca" class="w-full h-full object-cover" fetchpriority="high" decoding="async" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-white space-y-7 fade-in">
+    <p class="text-sm md:text-base tracking-wide uppercase text-white/90">
+      Roca: el superpoder de no olvidar 🪨
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-xl">
+      El verdadero problema de los negocios es el olvido.
+    </h1>
+
+    <p class="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto drop-shadow-md">
+      Roca es el sistema para que tú y tu equipo <span class="font-semibold">no olviden nada</span>:
+      registra tareas por WhatsApp, envía recordatorios automáticos y te permite
+      hacer seguimiento real de todo — sin cambiar tu forma de trabajar.
+    </p>
+
+    <div class="flex flex-col items-center justify-center gap-3 pt-3">
+  <a data-cta="hero_demo"
+     href="#"
+     class="boton_demo inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 shadow-xl text-black w-full sm:w-auto"
+     style="background-color: var(--secondary)">
+    Agendar Demo (30 Días Gratis)
+  </a>
+</div>
+
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center text-sm text-gray-200 pt-1">
+      <div class="flex items-center justify-center gap-2">
+        <span class="text-green-300">✓</span> Sin tarjeta
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <span class="text-green-300">✓</span> Listo en 2 minutos
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <span class="text-green-300">✓</span> Sin salir de WhatsApp
+      </div>
+    </div>
+
+    <!-- Micro ancla de precio (no protagonista) -->
+    <div class="pt-2 text-sm text-white/80">
+      30 días gratis. Luego desde <span class="font-semibold">$50.000 COP</span> por usuario al mes.
+    </div>
+
+    <div class="pt-2">
+      <a data-cta="hero_demo" href="#como-funciona" class="text-sm text-white/80 hover:text-white underline underline-offset-4">
+        Ver cómo funciona en 50 segundos
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO REAL DEL PROCESO -->
+<section class="py-24 bg-white">
+  <div class="container mx-auto px-4">
+
+    <div class="text-center mb-16 max-w-3xl mx-auto space-y-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900" style="color: var(--primary)">
+        Así funciona Roca en la práctica
+      </h2>
+      <p class="text-lg text-gray-600">
+        De WhatsApp al seguimiento y recordatorios en segundos.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Paso 1 --> <div class="text-center space-y-4"> <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100"> <img src="assets/whatsapp-real.png" alt="Mensaje de WhatsApp creando tarea" class="w-full h-auto object-cover" loading="lazy" /> </div> <h3 class="font-bold text-lg text-gray-900">1. Escribes la tarea</h3> <p class="text-gray-600"> “Revisar inventario mañana 9am con Pedro”. Así de simple. </p> </div> 
+      
+      
+      <!-- Paso 2 --> <div class="text-center space-y-4"> <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100"> <img src="assets/roca-panel-real.png" alt="Confirmación automática de tarea" class="w-full h-auto object-cover" loading="lazy" /> </div> <h3 class="font-bold text-lg text-gray-900">2. Roca la registra</h3> <p class="text-gray-600"> Se asigna responsable, fecha y estado automáticamente. Nada queda “en el aire”. </p> </div> 
+      
+      
+      <!-- Paso 3 --> <div class="text-center space-y-4"> <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100"> <img src="assets/seguimiento.jpg" alt="Tablero con seguimiento de tareas" class="w-full h-auto object-cover" loading="lazy" /> </div> <h3 class="font-bold text-lg text-gray-900">3. Haces seguimiento real</h3> <p class="text-gray-600"> Ves qué está pendiente, en riesgo o retrasado. El seguimiento no es magia. Es sistema. </p> </div> 
+      
+      
+      <!-- Paso 4 --> <div class="text-center space-y-4"> <div class="rounded-3xl overflow-hidden shadow-xl border border-gray-100"> <img src="assets/automatizaciones.jpg" alt="Recordatorio automático por WhatsApp" class="w-full h-auto object-cover" loading="lazy" /> </div> <h3 class="font-bold text-lg text-gray-900">4. Roca te recuerda lo importante</h3> <p class="text-gray-600"> Programa tareas recurrentes y recibe recordatorios automáticos. Nadie vuelve a olvidar lo que debe hacerse. </p> </div> </div>
+
+    <div class="text-center mt-16">
+  <a data-cta="hero_whatsapp"
+     href="https://wa.me/573XXXXXXXXX?text=Hola%20quiero%20agendar%20una%20demo%20de%20Roca"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="boton_demo inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-white shadow-lg hover:scale-[1.02] transition"
+     style="background-color: var(--primary)">
+    Agendar Demo (30 Días Gratis)
+  </a>
+</div>
+
+  </div>
+</section>
+
+
+
+  <!-- How it works -->
+  <section id="como-funciona" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-14 max-w-3xl mx-auto space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold" style="color: var(--primary)">Así activas el superpoder de no olvidar <br> en 50 segundos</h2>
+        <p class="text-lg text-gray-600">3 pasos para que tu equipo no pierda ni olvide tareas</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6">
+          
+          <div class="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100">
+  <div class="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white" style="background-color: var(--primary)">1</div>
+  <div>
+    <h3 class="font-bold text-gray-900 text-lg">Delegas como siempre, pero ahora queda registrado</h3>
+    <p class="text-gray-600">Envías un mensaje por WhatsApp y la tarea queda con responsable y fecha en segundos.</p>
+  </div>
+</div>
+
+<div class="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100">
+  <div class="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white" style="background-color: var(--primary)">2</div>
+  <div>
+    <h3 class="font-bold text-gray-900 text-lg">Seguimiento claro de todo</h3>
+    <p class="text-gray-600">Sabes qué está pendiente, qué está retrasado y quién es responsable. Nada vuelve a quedar en el aire.</p>
+  </div>
+</div>
+
+<div class="flex gap-4 p-5 rounded-2xl bg-gray-50 border border-gray-100">
+  <div class="shrink-0 w-10 h-10 rounded-xl flex items-center justify-center font-bold text-white" style="background-color: var(--primary)">3</div>
+  <div>
+    <h3 class="font-bold text-gray-900 text-lg">Lo recurrente deja de depender de la memoria</h3>
+    <p class="text-gray-600">Programa tareas una sola vez y Roca envía recordatorios automáticos para que tú y tu equipo no olviden nada.</p>
+  </div>
+</div>
+
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a data-cta="how_trial" href="#"
+               class="boton_demo inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-bold text-white shadow-lg hover:scale-[1.02] transition"
+               style="background-color: var(--primary)">
+              Agendar Demo (30 Días Gratis)
+            </a>
+          </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-black mx-auto w-full max-w-[360px] md:max-w-[400px]">
+          <div class="relative w-full" style="padding-top: 177.78%;">
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/yzKP8q572hI"
+              title="Roca - Cómo funciona"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+
+        <noscript>
+          <img src="assets/how-it-works.jpeg" alt="Vista del tablero y tareas" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="servicios" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--primary)">Lo que resuelve Roca (en la vida real)</h2>
+        <p class="text-lg text-gray-600">Menos olvidos. Menos caos. Menos problemas.</p>
+        <div class="w-24 h-1.5 mx-auto rounded-full mt-5" style="background-color: var(--primary)"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col hover:-translate-y-1 overflow-hidden h-full">
+          <div class="h-48 w-full relative overflow-hidden">
+            <img src="assets/service-img-1.jpeg" alt="No más perseguir al equipo" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60"></div>
+          </div>
+          <div class="p-8 pt-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Que nada se quede “pendiente” en tu cabeza</h3>
+            <p class="text-gray-600 leading-relaxed flex-grow">
+              Cada tarea queda registrada con responsable, fecha y estado. Tu mente se libera y el negocio avanza.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col hover:-translate-y-1 overflow-hidden h-full">
+          <div class="h-48 w-full relative overflow-hidden">
+            <img src="assets/service-img-2.jpeg" alt="Recordatorios para no olvidar" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60"></div>
+          </div>
+          <div class="p-8 pt-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Recordatorios que llegan donde tu equipo sí está</h3>
+            <p class="text-gray-600 leading-relaxed flex-grow">
+              Roca envía recordatorios por WhatsApp para que nadie diga “se me pasó” o “se me olvidó”.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col hover:-translate-y-1 overflow-hidden h-full">
+          <div class="h-48 w-full relative overflow-hidden">
+            <img src="assets/service-img-3.jpeg" alt="Visibilidad del avance" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60 opacity-60"></div>
+          </div>
+          <div class="p-8 pt-6 flex-grow flex flex-col">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Por fin hacer seguimiento es posible</h3>
+            <p class="text-gray-600 leading-relaxed flex-grow">
+              avanza en una tarea y dale seguimiento real.
+Cotizaciones, proyectos, pendientes… nada depende de la memoria.
+El seguimiento no es magia. Es sistema.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quién es -->
+  <section id="para-quien" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        <div class="w-full md:w-1/2">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
+            <div class="relative w-full h-full overflow-hidden about-slider-container group">
+              <img src="assets/about-img-1.jpeg" alt="Equipo pequeño trabajando" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" data-index="0" loading="lazy" decoding="async" />
+              <img src="assets/about-img-2.jpeg" alt="Operaciones y seguimiento" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" data-index="1" loading="lazy" decoding="async" />
+              <img src="assets/about-img-3.jpeg" alt="WhatsApp y tareas" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" data-index="2" loading="lazy" decoding="async" />
+
+              <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10 pointer-events-none">
+                <span class="w-2 h-2 rounded-full transition-all bg-white/50 bg-white w-6"></span>
+                <span class="w-2 h-2 rounded-full transition-all bg-white/50"></span>
+                <span class="w-2 h-2 rounded-full transition-all bg-white/50"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 space-y-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900" style="color: var(--primary)">
+            Para equipos pequeños que no se pueden dar el lujo de olvidar
+          </h2>
+
+          <p class="text-gray-600 text-lg leading-relaxed">
+            Roca es para equipos de 2 a 30 personas que coordinan su trabajo por chat y sienten que lo importante se pierde, las tareas se olvidan, el seguimiento se vuelve imposible y nada avanza si el gerente no lo impulsa. Si tu negocio vive en WhatsApp, Roca convierte ese caos en un sistema claro que no deja pasar nada.
+          </p>
+
+          <ul class="space-y-4">
+            <li class="flex items-center gap-4 text-gray-700 p-3 bg-gray-50 rounded-xl">
+              <span class="text-green-500 bg-white p-1 rounded-full shadow-sm">✓</span>
+              <span class="font-medium">Menos olvidos = menos errores y menos reprocesos</span>
+            </li>
+            <li class="flex items-center gap-4 text-gray-700 p-3 bg-gray-50 rounded-xl">
+              <span class="text-green-500 bg-white p-1 rounded-full shadow-sm">✓</span>
+              <span class="font-medium">Tu equipo sigue trabajando en WhatsApp (sin otra app)</span>
+            </li>
+            <li class="flex items-center gap-4 text-gray-700 p-3 bg-gray-50 rounded-xl">
+  <span class="text-green-500 bg-white p-1 rounded-full shadow-sm">✓</span>
+  <span class="font-medium">El seguimiento deja de depender de la memoria y se convierte en sistema.</span>
+</li>
+
+<li class="flex items-center gap-4 text-gray-700 p-3 bg-gray-50 rounded-xl">
+  <span class="text-green-500 bg-white p-1 rounded-full shadow-sm">✓</span>
+  <span class="font-medium">Programa tareas recurrentes una vez y asegúrate de que nadie vuelva a olvidarlas.</span>
+</li>
+
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a data-cta="para_quien_trial" href="#"
+               class="boton_demo inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-bold text-white shadow-lg hover:scale-[1.02] transition"
+               style="background-color: var(--primary)">
+              Agendar Demo (30 Días Gratis)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose -->
+  <section class="py-24 bg-slate-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        <div class="w-full md:w-1/2 space-y-10 order-1">
+          <div class="space-y-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900" style="color: var(--primary)">
+              ¿Por qué existe Roca?
+            </h2>
+            <p class="text-lg text-gray-600">
+              Porque los negocios no fallan por falta de talento. Fallan porque algo importante se olvida.
+            </p>
+          </div>
+
+          <div class="space-y-8">
+            <div class="flex flex-col gap-2">
+              <h3 class="font-bold text-gray-900 text-xl">Diseñado para prevenir olvidos</h3>
+              <p class="text-gray-600">Responsables, fechas, recordatorios y visibilidad. Un sistema, no memoria humana.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="font-bold text-gray-900 text-xl">Funciona donde ya trabajas</h3>
+              <p class="text-gray-600">WhatsApp es el canal. La promesa es que nada se te olvide.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h3 class="font-bold text-gray-900 text-xl">Claridad sin procesos complejos</h3>
+              <p class="text-gray-600">Empiezas rápido. Sin capacitaciones eternas ni herramientas difíciles.</p>
+            </div>
+          </div>
+
+          <a data-cta="why_trial" href="#"
+             class="boton_demo inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold transition-all hover:scale-105 shadow-xl text-black"
+             style="background-color: var(--secondary)">
+            Agendar Demo (30 Días Gratis)
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/2 order-2">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
+            <div class="relative w-full h-full overflow-hidden why-slider-container group">
+              <img src="assets/why-img-1.jpeg" alt="Interfaz simple" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100" data-index="0" loading="lazy" decoding="async" />
+              <img src="assets/why-img-2.jpeg" alt="Seguimiento del equipo" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" data-index="1" loading="lazy" decoding="async" />
+              <img src="assets/why-img-3.jpeg" alt="Recordatorios por WhatsApp" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0" data-index="2" loading="lazy" decoding="async" />
+
+              <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10 pointer-events-none">
+                <span class="w-2 h-2 rounded-full transition-all bg-white/50 bg-white w-6"></span>
+                <span class="w-2 h-2 rounded-full transition-all bg-white/50"></span>
+                <span class="w-2 h-2 rounded-full transition-all bg-white/50"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16 max-w-3xl mx-auto space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900" style="color: var(--primary)">Lo que dicen nuestros clientes</h2>
+        <p class="text-lg text-gray-600">Equipos que activaron el superpoder de no olvidar</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-sm relative flex flex-col h-full border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-gray-700 leading-relaxed italic mb-6 flex-grow">
+            “Antes se nos pasaban entregas. Ahora nada queda en el aire: responsable, fecha y recordatorios. Roca nos quitó ese estrés.”
+          </p>
+          <div class="mt-auto pt-4 border-t border-gray-200">
+            <h5 class="font-bold text-gray-900">Lucía Méndez</h5>
+            <p class="text-sm text-gray-500 font-medium">Directora — Agencia Creativa</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-sm relative flex flex-col h-full border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-gray-700 leading-relaxed italic mb-6 flex-grow">
+            “Por fin dejé de estar recordando y persiguiendo. Si alguien se retrasa, lo veo y actúo a tiempo.”
+          </p>
+          <div class="mt-auto pt-4 border-t border-gray-200">
+            <h5 class="font-bold text-gray-900">Carlos Ruiz</h5>
+            <p class="text-sm text-gray-500 font-medium">Gerente de Operaciones</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-2xl shadow-sm relative flex flex-col h-full border border-gray-100">
+          <div class="flex gap-1 mb-4">
+            <span class="text-yellow-400">★★★★☆</span>
+          </div>
+          <p class="text-gray-700 leading-relaxed italic mb-6 flex-grow">
+            “Es un sistema anti-olvido. Después de probarlo, volver a depender de la memoria ya no tenía sentido.”
+          </p>
+          <div class="mt-auto pt-4 border-t border-gray-200">
+            <h5 class="font-bold text-gray-900">Mariana Silva</h5>
+            <p class="text-sm text-gray-500 font-medium">Fundadora</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="agenda-demo" class="py-24 bg-gray-50 text-center px-4 relative overflow-hidden scroll-mt-28">
+    <div class="container mx-auto">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row items-stretch border border-gray-100">
+        <div class="w-full md:w-1/2 p-8 md:p-16 text-left space-y-8 order-2 md:order-1 bg-[radial-gradient(circle_at_top_left,_rgba(37,211,102,0.12),_transparent_45%)]">
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold">
+            Roca: el superpoder de no olvidar
+          </p>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight" style="color: var(--primary)">
+            Agenda una demo de Roca Task Manager
+          </h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Déjanos tus datos y te contactaremos para mostrarte cómo organizar tareas y seguimientos desde WhatsApp.
+          </p>
+
+          <div class="space-y-5 text-gray-600">
+            <div class="flex items-start gap-3">
+              <span class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full text-sm font-bold text-white" style="background-color: var(--primary)">1</span>
+              <p>Cuéntanos quién eres y cómo prefieres que te contactemos.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full text-sm font-bold text-white" style="background-color: var(--primary)">2</span>
+              <p>Nuestro equipo te agenda una demo para mostrarte Roca en acción.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full text-sm font-bold text-white" style="background-color: var(--primary)">3</span>
+              <p>Activas tu prueba gratis y empiezas a ordenar tareas y seguimientos desde WhatsApp.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 p-8 md:p-12 lg:p-14 order-1 md:order-2 bg-gray-900 text-white">
+          <div class="max-w-xl mx-auto">
+            <div class="mb-6 text-left">
+              <p class="text-sm font-medium uppercase tracking-[0.24em] text-white/60">Agenda tu demo</p>
+              <p class="mt-2 text-sm text-white/70">Completa el formulario y te llevamos a una página de confirmación al instante.</p>
+            </div>
+
+            <form id="contact-form" method="POST" target="contact_webhook_iframe" class="space-y-5 text-left">
+              <div>
+                <label for="contact-name" class="mb-2 block text-sm font-semibold text-white">Tu nombre</label>
+                <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="Escribe tu nombre"
+                       class="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3.5 text-base text-white placeholder:text-white/45 transition focus:border-white/50 focus:bg-white/15 focus:outline-none" />
+              </div>
+
+              <div>
+                <label for="contact-phone-local" class="mb-2 block text-sm font-semibold text-white">Tu WhatsApp</label>
+                <div class="grid grid-cols-1 gap-3 sm:grid-cols-[190px_minmax(0,1fr)]">
+                  <div class="relative">
+                    <select id="contact-country-code" required
+                            class="w-full appearance-none rounded-2xl border border-white/15 bg-white/10 px-4 py-3.5 pr-12 text-base font-semibold text-white transition focus:border-white/50 focus:bg-white/15 focus:outline-none">
+                      <option value="+57" selected>Colombia (+57)</option>
+                      <option value="+52">Mexico (+52)</option>
+                      <option value="+51">Peru (+51)</option>
+                      <option value="+54">Argentina (+54)</option>
+                      <option value="+56">Chile (+56)</option>
+                      <option value="+1">Estados Unidos (+1)</option>
+                      <option value="+34">Espana (+34)</option>
+                    </select>
+                    <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-white/60">▾</span>
+                  </div>
+                  <div>
+                    <input id="contact-phone-local" type="tel" required inputmode="numeric" autocomplete="tel-national"
+                           minlength="10" maxlength="10" pattern="[0-9]{10}" placeholder="3001234567"
+                           class="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3.5 text-base text-white placeholder:text-white/45 transition focus:border-white/50 focus:bg-white/15 focus:outline-none" />
+                  </div>
+                </div>
+                <input id="contact-phone" name="whatsapp" type="hidden" />
+                <p class="mt-2 text-xs text-white/55">Ingresa exactamente 10 digitos, sin espacios ni letras.</p>
+              </div>
+
+              <div>
+                <label for="contact-email" class="mb-2 block text-sm font-semibold text-white">Tu Email (opcional)</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tucorreo@empresa.com"
+                       class="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3.5 text-base text-white placeholder:text-white/45 transition focus:border-white/50 focus:bg-white/15 focus:outline-none" />
+              </div>
+
+              <div>
+                <label for="contact-time" class="mb-2 block text-sm font-semibold text-white">Mejor horario para contactarte</label>
+                <input id="contact-time" name="best_time" type="text" required placeholder="Ej: Lunes a viernes de 9:00 a.m. a 12:00 p.m."
+                       class="w-full rounded-2xl border border-white/15 bg-white/10 px-4 py-3.5 text-base text-white placeholder:text-white/45 transition focus:border-white/50 focus:bg-white/15 focus:outline-none" />
+              </div>
+
+              <button type="submit" id="contact-submit"
+                      class="inline-flex w-full items-center justify-center rounded-2xl px-6 py-4 text-lg font-bold text-black transition hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-70"
+                      style="background-color: var(--secondary)">
+                Agendar mi demo
+              </button>
+            </form>
+
+            <p class="mt-4 text-sm text-white/55">
+              Al enviar tus datos, te contactaremos para mostrarte cómo funciona Roca Task Manager.
+            </p>
+            <iframe name="contact_webhook_iframe" title="Envio de formulario" class="hidden"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-14 max-w-3xl mx-auto space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold" style="color: var(--primary)">Preguntas frecuentes</h2>
+        <p class="text-lg text-gray-600">Objeciones típicas antes de activar el superpoder</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        <details class="group bg-white rounded-2xl border border-gray-100 p-6">
+  <summary class="cursor-pointer font-bold text-gray-900 flex justify-between items-center">
+    ¿Cuánto cuesta Roca Task Manager?
+    <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+  </summary>
+  <p class="mt-3 text-gray-600 leading-relaxed">
+    Roca cuesta desde $50.000 COP por usuario al mes. 
+    Puedes probarlo gratis durante 30 días, sin tarjeta y sin compromiso.
+  </p>
+</details>
+        <details class="group bg-white rounded-2xl border border-gray-100 p-6">
+          <summary class="cursor-pointer font-bold text-gray-900 flex justify-between items-center">
+            ¿Mi equipo tiene que instalar otra app?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            No. Tu equipo sigue usando WhatsApp. Roca organiza y envía recordatorios para que nada se olvide.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 p-6">
+  <summary class="cursor-pointer font-bold text-gray-900 flex justify-between items-center">
+    ¿Funciona con WhatsApp normal o Business?
+    <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+  </summary>
+  <p class="mt-3 text-gray-600 leading-relaxed">
+    Funciona con cualquier tipo de WhatsApp. Roca es un chat al que le envías tareas y desde ahí recibes recordatorios y seguimiento de lo importante.
+  </p>
+</details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 p-6">
+          <summary class="cursor-pointer font-bold text-gray-900 flex justify-between items-center">
+            ¿Para qué tamaño de equipo sirve?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            Ideal para equipos pequeños (2 a 30 personas) donde lo importante se coordina por chat y se olvidan tareas con frecuencia.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 p-6">
+          <summary class="cursor-pointer font-bold text-gray-900 flex justify-between items-center">
+            ¿Qué pasa si alguien no responde?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            La tarea queda registrada, se envían recordatorios y tú ves el estado sin tener que perseguir. Control sin desgaste.
+          </p>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-gray-100 p-6">
+          <summary class="cursor-pointer font-bold text-gray-900 flex justify-between items-center">
+            ¿Necesito tarjeta para la prueba?
+            <span class="text-gray-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-gray-600 leading-relaxed">
+            No necesitas tarjeta de crédito para tomar tu prueba gratis de 30 días.
+          </p>
+        </details>
+
+        <div class="text-center pt-6">
+          <a data-cta="faq_trial" href="#"
+             class="boton_demo inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-white shadow-lg hover:scale-[1.02] transition"
+             style="background-color: var(--primary)">
+            Agendar Demo (30 Días Gratis)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative bg-gray-900 text-white py-16">
+    <div class="relative z-10 container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-800 pb-12">
+      <div>
+        <h4 class="text-2xl font-bold mb-2">Roca</h4>
+        <p class="text-sm text-gray-400 mb-6">El superpoder de no olvidar 🪨</p>
+        <p class="text-gray-400 leading-relaxed max-w-xs">
+          Un sistema anti-olvido para equipos pequeños: responsables, fechas, recordatorios y tablero simple (sin cambiar de WhatsApp).
+        </p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6">Contacto</h4>
+        <ul class="space-y-4 text-gray-400">
+          <li class="flex items-center gap-3"><span>📞</span> 57 311 898 1443</li>
+          <li class="flex items-center gap-3"><span>✉️</span> info@rocataskmanager.com</li>
+          <li class="flex items-center gap-3"><span>📍</span> Bogotá, Colombia</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-6">Legal</h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li><a href="https://rocataskmanager.com/terminosycondiciones/" target="_blank" rel="noopener noreferrer" class="hover:text-white">Política de Privacidad</a></li>
+          <li><a href="https://rocataskmanager.com/terminosycondiciones/" target="_blank" rel="noopener noreferrer" class="hover:text-white">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 py-8 flex justify-center border-b border-gray-800">
+      <div class="flex gap-6">
+        <a href="https://instagram.com/rocatask" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all hover:scale-110">Instagram</a>
+        <a href="https://www.tiktok.com/@roca.task.manger" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all hover:scale-110">TikTok</a>
+        <a href="https://www.youtube.com/channel/UCr7UCKCDDYr-V0fZPYCeyyg" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-all hover:scale-110">YouTube</a>
+      </div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-4 pt-8 text-center">
+      <p class="text-gray-600 text-sm">© 2026 Roca Task Manager. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a data-cta="floating_whatsapp" href="#" class="boton_demo fixed bottom-6 right-6 z-40 inline-flex items-center gap-3 px-5 py-3 rounded-full shadow-xl text-white animate-bounce-slow hover:scale-110 transition-transform" style="background-color: #25D366" aria-label="Agendar Demo (30 Días Gratis)">
+    <span class="font-bold text-sm sm:text-base leading-none">Agendar Demo (30 Días Gratis)</span>
+  </a>
+
+  <script>
+    // ======== Sliders ========
+    (function(){
+      function initSlider(containerSelector) {
+        let idx = 0;
+        const container = document.querySelector(containerSelector);
+        if(!container) return;
+        const imgs = container.querySelectorAll('img');
+        const dots = container.querySelectorAll('span');
+
+        if(imgs.length > 1) {
+          setInterval(() => {
+            imgs[idx].classList.remove('opacity-100');
+            imgs[idx].classList.add('opacity-0');
+            if(dots[idx]) { dots[idx].classList.remove('bg-white', 'w-6'); dots[idx].classList.add('bg-white/50'); }
+
+            idx = (idx + 1) % imgs.length;
+
+            imgs[idx].classList.remove('opacity-0');
+            imgs[idx].classList.add('opacity-100');
+            if(dots[idx]) { dots[idx].classList.remove('bg-white/50'); dots[idx].classList.add('bg-white', 'w-6'); }
+          }, 4000);
+        }
+      }
+      initSlider('.about-slider-container');
+      initSlider('.why-slider-container');
+    })();
+
+    // ======== WhatsApp link builder ========
+    function buildWhatsAppLink() {
+      const n = (window.ROCA_CONFIG?.whatsappNumber || "").replace(/[^\d]/g,'');
+      const text = encodeURIComponent(window.ROCA_CONFIG?.whatsappText || "Hola!");
+      return `https://wa.me/${n}?text=${text}`;
+    }
+
+    // ======== Tracking helpers ========
+    window.dataLayer = window.dataLayer || [];
+    function track(eventName, payload) {
+      window.dataLayer.push({ event: eventName, ...payload });
+    }
+
+    // ======== Bind CTAs ========
+    (function() {
+      const waUrl = buildWhatsAppLink();
+      const formAnchor = "#agenda-demo";
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      document.querySelectorAll('a.boton_whatsapp').forEach(a => {
+        a.setAttribute("href", waUrl);
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "noopener noreferrer");
+      });
+
+      document.querySelectorAll('a.boton_demo').forEach(a => {
+        a.setAttribute("href", formAnchor);
+        a.removeAttribute("target");
+        a.removeAttribute("rel");
+
+        a.addEventListener('click', () => {
+          if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+          }
+        }, { passive: true });
+      });
+
+      document.querySelectorAll('a[data-cta]').forEach(a => {
+        a.addEventListener('click', () => {
+          track("cta_click", { cta: a.getAttribute('data-cta'), href: a.getAttribute('href') });
+        }, { passive: true });
+      });
+    })();
+
+    // ======== Contact form ========
+    (function() {
+      const form = document.getElementById('contact-form');
+      if (!form) return;
+
+      const submitButton = document.getElementById('contact-submit');
+      const countryCodeInput = document.getElementById('contact-country-code');
+      const localPhoneInput = document.getElementById('contact-phone-local');
+      const fullPhoneInput = document.getElementById('contact-phone');
+      const webhookUrl = window.ROCA_CONFIG?.contactWebhookUrl || "";
+      const thankYouPath = window.ROCA_CONFIG?.thankYouPath || "gracias.html";
+      let isSubmitting = false;
+
+      form.setAttribute("action", webhookUrl);
+
+      function normalizePhoneValue() {
+        if (!localPhoneInput) return "";
+        const digitsOnly = localPhoneInput.value.replace(/\D/g, "").slice(0, 10);
+        localPhoneInput.value = digitsOnly;
+
+        const isValid = digitsOnly.length === 10;
+        localPhoneInput.setCustomValidity(isValid ? "" : "Ingresa un numero de WhatsApp de 10 digitos, sin espacios ni letras.");
+
+        if (fullPhoneInput) {
+          const countryCode = countryCodeInput?.value || "+57";
+          fullPhoneInput.value = isValid ? `${countryCode}${digitsOnly}` : "";
+        }
+
+        return digitsOnly;
+      }
+
+      if (localPhoneInput) {
+        localPhoneInput.addEventListener('input', normalizePhoneValue);
+        localPhoneInput.addEventListener('blur', normalizePhoneValue);
+      }
+
+      form.addEventListener('submit', (event) => {
+        const normalizedPhone = normalizePhoneValue();
+        if (!normalizedPhone || normalizedPhone.length !== 10) {
+          event.preventDefault();
+          localPhoneInput?.reportValidity();
+          return;
+        }
+
+        if (isSubmitting) {
+          event.preventDefault();
+          return;
+        }
+
+        isSubmitting = true;
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = "Enviando...";
+        }
+
+        track("demo_form_submit", {
+          form: "contact_form",
+          destination: webhookUrl
+        });
+
+        setTimeout(() => {
+          window.location.href = thankYouPath;
+        }, 700);
+      });
+    })();
+
+    // ======== Engagement tracking ========
+    (function() {
+      let fired50 = false, fired75 = false;
+
+      function onScroll() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+        const winHeight = window.innerHeight;
+        const progress = (scrollTop + winHeight) / docHeight;
+
+        if (!fired50 && progress >= 0.50) { fired50 = true; track("scroll_depth", { depth: 50 }); }
+        if (!fired75 && progress >= 0.75) { fired75 = true; track("scroll_depth", { depth: 75 }); }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      setTimeout(() => {
+        track("engaged_30s", { engaged: true });
+      }, 30000);
+    })();
+  </script>
+</body>
+</html>
