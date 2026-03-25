@@ -71,8 +71,8 @@
 <body class="font-sans bg-white text-[var(--ink)]">
   <script>
     window.ROCA_CONFIG = {
-      whatsappNumber: "573118981443",
-      whatsappText: "Hola, lei el blog sobre el panel de control para PYMES y quiero agendar una demo de Roca."
+      whatsappNumber: "3118981443",
+      whatsappText: "Quiero agendar una Demo para Roca task manager y activar mi prueba gratis de 30 dias"
     };
   </script>
 
@@ -308,13 +308,14 @@
     </div>
   </footer>
 
-  <a data-cta="floating_whatsapp" href="#" class="fixed bottom-6 right-6 z-40 inline-flex h-14 items-center justify-center rounded-full bg-[var(--wa)] px-5 text-sm font-bold text-[#0d2416] shadow-xl transition hover:scale-105" aria-label="Hablar por WhatsApp">
-    WhatsApp
+  <a data-cta="floating_whatsapp" href="#" class="fixed bottom-4 right-4 z-40 inline-flex h-10 items-center justify-center rounded-full bg-[var(--wa)] px-4 text-xs font-bold text-[#0d2416] shadow-xl transition hover:scale-105 md:bottom-6 md:right-6 md:h-11 md:px-5 md:text-sm" aria-label="Agenda tu demo por WhatsApp">
+    Agenda tu demo
   </a>
 
   <script>
     function buildWhatsAppLink() {
-      const n = (window.ROCA_CONFIG?.whatsappNumber || "").replace(/[^\d]/g, "");
+      let n = (window.ROCA_CONFIG?.whatsappNumber || "").replace(/[^\d]/g, "");
+      if (n.length === 10) n = `57${n}`;
       const text = encodeURIComponent(window.ROCA_CONFIG?.whatsappText || "Hola!");
       return `https://wa.me/${n}?text=${text}`;
     }
