@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El panel de control que tu PYME necesitaba | Roca Task Manager</title>
+  <meta name="description" content="Descubre por que un dashboard de gestion de proyectos le da claridad total a tu PYME desde WhatsApp. Agenda una demo de Roca Task Manager." />
+  <link rel="canonical" href="https://rocataskmanager.com/blog/importancia-de-un-sistema-de-gestion-de-tareas/" />
+
+  <meta property="og:title" content="El panel de control que tu PYME necesitaba: claridad total desde WhatsApp" />
+  <meta property="og:description" content="Roca Task Manager convierte conversaciones de WhatsApp en un dashboard claro para que ninguna tarea vuelva a perderse." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://rocataskmanager.com/blog/importancia-de-un-sistema-de-gestion-de-tareas/" />
+  <meta property="og:image" content="https://rocataskmanager.com/assets/cta-bg.jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El panel de control que tu PYME necesitaba" />
+  <meta name="twitter:description" content="Claridad total desde WhatsApp con un dashboard de proyectos pensado para PYMES." />
+  <meta name="twitter:image" content="https://rocataskmanager.com/assets/cta-bg.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Poppins", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --ink: #2b2d39;
+      --muted: #6d7184;
+      --surface: #f5f6fa;
+      --line: #e5e7f1;
+      --accent: #675bff;
+      --dark-pill: #20212b;
+      --wa: #25d366;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .toc-link.active {
+      color: var(--ink);
+      font-weight: 700;
+      border-left-color: var(--accent);
+      background: white;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid rgba(103, 91, 255, 0.45);
+      outline-offset: 2px;
+      border-radius: 14px;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-[var(--ink)]">
+  <script>
+    window.ROCA_CONFIG = {
+      whatsappNumber: "3118981443",
+      whatsappText: "Quiero agendar una Demo para Roca task manager y activar mi prueba gratis de 30 dias"
+    };
+  </script>
+
+  <header class="sticky top-0 z-50 border-b border-[var(--line)] bg-white/95 backdrop-blur">
+    <div class="mx-auto max-w-[1320px] px-4">
+      <div class="flex h-20 items-center justify-between gap-4">
+        <a href="../../index.html" class="flex items-center gap-3">
+          <img src="../../assets/Logo-roca-task.png" alt="Roca Task Manager" class="h-9 w-auto object-contain" />
+          <span class="text-xl font-semibold tracking-tight text-[var(--ink)]">roca <span class="text-[var(--muted)]">blog</span></span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-[var(--muted)]">
+          <a href="#que-es" class="hover:text-[var(--ink)]">Temas</a>
+          <span class="text-[#c5c7d4]">|</span>
+          <a href="../../index.html" class="hover:text-[var(--ink)]">rocataskmanager.com</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <div class="hidden xl:flex h-12 w-[260px] items-center rounded-full border border-[var(--line)] px-4 text-sm text-[var(--muted)]">
+            Buscar
+          </div>
+          <a data-cta="header_whatsapp" href="#" class="inline-flex h-12 items-center rounded-full bg-[var(--dark-pill)] px-7 text-[15px] font-semibold text-white transition hover:opacity-90">
+            Empieza ya
+          </a>
+        </div>
+
+        <button class="md:hidden" aria-label="Abrir menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-[var(--line)] bg-white px-4 py-4 md:hidden">
+      <div class="flex flex-col gap-3 text-sm">
+        <a href="#que-es">Que es</a>
+        <a href="#problema">Problema real</a>
+        <a href="#roca">Roca</a>
+        <a href="#para-quien">Para quien</a>
+        <a href="#cierre">Cierre</a>
+        <a data-cta="mobile_whatsapp" href="#" class="mt-1 inline-flex h-11 items-center justify-center rounded-full bg-[var(--dark-pill)] px-6 font-semibold text-white">
+          Empieza ya
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-[var(--surface)]">
+    <section class="mx-auto max-w-[1536px] border-b border-[var(--line)]">
+      <div class="grid lg:grid-cols-2">
+        <div class="px-6 py-12 md:px-12 lg:px-16 lg:py-16">
+          <p class="text-[15px] font-medium text-[var(--muted)]">Gestion de proyectos</p>
+          <h1 class="mt-3 max-w-[620px] text-3xl font-extrabold leading-[1.14] sm:text-4xl md:text-6xl">
+            El panel de control que tu PYME necesitaba: claridad total desde WhatsApp
+          </h1>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3 text-sm text-[var(--muted)]">
+            <span>Equipo Roca</span>
+            <span class="h-1 w-1 rounded-full bg-[#b6b8c7]"></span>
+            <span>Mar 2026</span>
+            <span class="h-1 w-1 rounded-full bg-[#b6b8c7]"></span>
+            <span>Lectura de 8 min</span>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a data-cta="hero_whatsapp_dark" href="#" class="inline-flex h-12 items-center rounded-full bg-[#15161d] px-7 text-lg font-semibold text-white transition hover:opacity-90">
+              Empieza ya
+            </a>
+            <a data-cta="hero_whatsapp" href="#" class="inline-flex h-12 items-center rounded-full bg-[var(--accent)] px-7 text-lg font-semibold text-white transition hover:brightness-110">
+              Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="relative min-h-[320px] bg-[#bfd0ff] px-8 py-8 md:px-12 md:py-10 lg:px-14">
+          <div class="absolute right-10 top-8 h-4 w-4 rounded-sm bg-white/70"></div>
+          <div class="absolute left-12 top-16 h-8 w-8 rounded-full border border-white/70"></div>
+          <div class="absolute bottom-14 left-16 h-5 w-5 rounded-sm bg-[#675bff]/30"></div>
+          <img src="../../assets/roca-panel-real.png" alt="Dashboard de gestion de proyectos" class="relative z-10 h-full w-full rounded-2xl border border-[#94acf8] object-cover shadow-xl shadow-[#7f93de]/25" loading="eager" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-[1536px] px-4 py-12 md:px-8">
+      <div class="grid gap-8 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-14">
+        <aside class="lg:sticky lg:top-24 lg:h-[calc(100vh-7rem)]">
+          <div class="rounded-2xl border border-[var(--line)] bg-white">
+            <a class="toc-link block border-l-4 border-transparent px-6 py-5 text-[17px] leading-tight text-[var(--muted)] transition hover:text-[var(--ink)]" href="#que-es">
+              Que es un dashboard de gestion de proyectos y como contribuye a la planificacion del proyecto?
+            </a>
+            <a class="toc-link block border-l-4 border-transparent border-t border-[var(--line)] px-6 py-5 text-[17px] leading-tight text-[var(--muted)] transition hover:text-[var(--ink)]" href="#beneficio">
+              Cual es el verdadero beneficio de un panel de proyectos?
+            </a>
+            <a class="toc-link block border-l-4 border-transparent border-t border-[var(--line)] px-6 py-5 text-[17px] leading-tight text-[var(--muted)] transition hover:text-[var(--ink)]" href="#problema">
+              El problema real de los equipos pequenos
+            </a>
+            <a class="toc-link block border-l-4 border-transparent border-t border-[var(--line)] px-6 py-5 text-[17px] leading-tight text-[var(--muted)] transition hover:text-[var(--ink)]" href="#roca">
+              Roca: el dashboard que nace desde tu chat
+            </a>
+            <a class="toc-link block border-l-4 border-transparent border-t border-[var(--line)] px-6 py-5 text-[17px] leading-tight text-[var(--muted)] transition hover:text-[var(--ink)]" href="#para-quien">
+              Para que tipo de negocio es ideal
+            </a>
+            <a class="toc-link block border-l-4 border-transparent border-t border-[var(--line)] px-6 py-5 text-[17px] leading-tight text-[var(--muted)] transition hover:text-[var(--ink)]" href="#cierre">
+              La tranquilidad de que nada se olvida
+            </a>
+          </div>
+        </aside>
+
+        <article class="min-w-0">
+          <div class="space-y-16">
+            <section id="que-es" class="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-10">
+              <h2 class="text-3xl font-extrabold leading-[1.14] sm:text-4xl md:text-6xl">
+                El panel de control que tu PYME necesitaba: claridad total desde WhatsApp
+              </h2>
+              <div class="mt-8 space-y-7 text-lg leading-[1.5] text-[#303444] md:text-[20px]">
+                <p>En una empresa pequena, la informacion viaja rapido y se pierde igual de rapido. Un mensaje en WhatsApp, una llamada rapida, una nota al margen. El resultado: tareas olvidadas, plazos incumplidos y un equipo que trabaja bajo presion constante.</p>
+                <p>Un dashboard de gestion de proyectos existe precisamente para resolver eso. Y Roca Task Manager lo hace de una forma que ninguna otra herramienta ofrece: sin salir de WhatsApp.</p>
+                <p>Un panel de gestion centraliza en un solo lugar toda la informacion clave de tu operacion: quien hace que, para cuando, con que recursos y en que estado. En lugar de buscar entre chats, hojas de calculo o correos, tienes una vista clara de todo.</p>
+                <p>Las metricas mas comunes que muestra incluyen:</p>
+                <ul class="list-disc space-y-2 pl-6">
+                  <li>Estado de las tareas y sus fechas limite</li>
+                  <li>Responsables y distribucion de carga de trabajo</li>
+                  <li>Hitos del proyecto y avance general</li>
+                  <li>Riesgos identificados antes de que se conviertan en problemas</li>
+                </ul>
+                <p>Para una PYME, esto no es un lujo. Es la diferencia entre crecer con control o apagar incendios todos los dias.</p>
+              </div>
+              <a data-cta="section_whatsapp_1" href="#" class="mt-8 inline-flex h-12 items-center rounded-full bg-[#15161d] px-7 text-lg font-semibold text-white transition hover:opacity-90">
+                Agendar demo
+              </a>
+            </section>
+
+            <section id="beneficio" class="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-10">
+              <h3 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+                Cual es el verdadero beneficio de un panel de proyectos?
+              </h3>
+              <div class="mt-7 space-y-7 text-xl leading-[1.5] text-[#303444] md:text-[20px]">
+                <p>El mayor beneficio de un buen dashboard no es la tecnologia. Es la paz mental de saber que tu equipo tiene todo bajo control.</p>
+                <p>Con un panel de proyectos bien implementado, todos pueden ver facilmente que esta pasando, detectar riesgos a tiempo y tomar decisiones mas inteligentes.</p>
+                <p>En vez de depender de memoria o de mensajes dispersos, tienes una vista unica, accesible y accionable.</p>
+              </div>
+            </section>
+
+            <section id="problema" class="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-10">
+              <h3 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+                El problema real de los equipos pequenos
+              </h3>
+              <div class="mt-7 space-y-7 text-xl leading-[1.5] text-[#303444] md:text-[20px]">
+                <p>La mayoria de equipos de 3 a 10 personas gestionan sus proyectos desde WhatsApp. Es natural: es la herramienta que ya usan, es rapida y todos la tienen.</p>
+                <p>El problema es lo que pasa despues:</p>
+                <ul class="list-disc space-y-2 pl-6">
+                  <li>Las tareas quedan enterradas entre chats y memes</li>
+                  <li>Nadie sabe exactamente quien se comprometio a que</li>
+                  <li>Los seguimientos dependen de la memoria de cada persona</li>
+                  <li>Los errores cuestan clientes, reputacion y dinero</li>
+                </ul>
+                <p class="font-semibold text-[#202338]">El caos no es falta de esfuerzo. Es falta de sistema.</p>
+              </div>
+            </section>
+
+            <section id="roca" class="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-10">
+              <h3 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+                Roca: el dashboard que nace desde tu chat
+              </h3>
+              <div class="mt-7 space-y-7 text-xl leading-[1.5] text-[#303444] md:text-[20px]">
+                <p>Roca Task Manager convierte tus conversaciones de WhatsApp en un sistema de gestion de tareas claro y ordenado. No tienes que cambiar tu forma de trabajar. Roca se adapta al habito que ya tienes.</p>
+                <p>Asi funciona:</p>
+                <ul class="list-disc space-y-2 pl-6">
+                  <li>Capturas la tarea directamente desde WhatsApp, como siempre lo has hecho</li>
+                  <li>Roca la convierte automaticamente en una tarea con responsable y fecha</li>
+                  <li>Tu equipo ve el panel actualizado en tiempo real</li>
+                  <li>Los recordatorios y el seguimiento ocurren sin esfuerzo extra</li>
+                </ul>
+                <p>El resultado es un dashboard de proyectos funcional, sin curvas de aprendizaje ni herramientas que nadie usa despues del primer dia.</p>
+              </div>
+              <div class="mt-8 grid gap-4 md:grid-cols-2">
+                <img src="../../assets/whatsapp-real.png" alt="Creacion de tareas desde WhatsApp" class="h-52 w-full rounded-2xl border border-[var(--line)] object-cover" loading="lazy" decoding="async" />
+                <img src="../../assets/seguimiento.jpg" alt="Seguimiento del equipo" class="h-52 w-full rounded-2xl border border-[var(--line)] object-cover" loading="lazy" decoding="async" />
+              </div>
+              <a data-cta="section_whatsapp_2" href="#" class="mt-8 inline-flex h-12 items-center rounded-full bg-[var(--accent)] px-7 text-lg font-semibold text-white transition hover:brightness-110">
+                Contactar por WhatsApp
+              </a>
+            </section>
+
+            <section id="para-quien" class="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-10">
+              <h3 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+                Para que tipo de negocio es ideal?
+              </h3>
+              <div class="mt-7 space-y-7 text-xl leading-[1.5] text-[#303444] md:text-[20px]">
+                <p>Roca funciona especialmente bien en sectores donde hay muchas tareas variables, varios actores involucrados y donde un olvido puede costar caro:</p>
+                <ul class="list-disc space-y-2 pl-6">
+                  <li>Empresas de eventos y produccion</li>
+                  <li>Agencias de viajes y turismo</li>
+                  <li>Equipos comerciales con muchos pendientes</li>
+                  <li>Operaciones logisticas o de servicios</li>
+                </ul>
+                <p>Si en tu negocio la coordinacion depende del chat, Roca es tu solucion.</p>
+              </div>
+            </section>
+
+            <section id="cierre" class="overflow-hidden rounded-2xl border border-[#222432] bg-[#1f212d] text-white">
+              <div class="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
+                <div class="p-6 md:p-10">
+                  <h3 class="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+                    La tranquilidad de que nada se olvida
+                  </h3>
+                  <div class="mt-7 space-y-6 text-lg leading-[1.6] text-white/85 md:text-[20px]">
+                    <p>Roca le da a los emprendedores y PYMEs exactamente eso: un sistema simple, natural y efectivo para que ninguna tarea vuelva a perderse entre mensajes.</p>
+                    <p>Roca es la forma mas simple de convertir mensajes en tareas y asegurarte de que nada se olvide.</p>
+                    <p class="text-white/70">Roca Task Manager · Tu sistema operativo de tareas</p>
+                  </div>
+                  <a data-cta="final_whatsapp" href="#" class="mt-8 inline-flex h-12 items-center rounded-full bg-[var(--wa)] px-7 text-lg font-semibold text-[#0d2416] transition hover:brightness-105">
+                    Quiero agendar la demo
+                  </a>
+                </div>
+                <div class="relative min-h-[280px]">
+                  <img src="../../assets/hero-bg1.jpeg" alt="Equipo coordinado con Roca" class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[var(--line)] bg-white py-8">
+    <div class="mx-auto flex max-w-[1320px] flex-col items-center justify-between gap-3 px-4 text-sm text-[var(--muted)] md:flex-row">
+      <p>© 2026 Roca Task Manager. Todos los derechos reservados.</p>
+      <a href="../../index.html" class="hover:text-[var(--ink)]">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <a id="floating-whatsapp-cta" data-cta="floating_whatsapp" href="#" class="inline-flex h-10 items-center justify-center rounded-full px-4 text-xs font-bold shadow-2xl transition hover:scale-105 md:h-11 md:px-5 md:text-sm" style="position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 9999; background-color: #25D366; color: #0d2416; border: 1px solid rgba(0,0,0,0.08);" aria-label="Agenda tu demo por WhatsApp">
+    Agenda tu demo
+  </a>
+
+  <script>
+    function buildWhatsAppLink() {
+      let n = (window.ROCA_CONFIG?.whatsappNumber || "").replace(/[^\d]/g, "");
+      if (n.length === 10) n = `57${n}`;
+      const text = encodeURIComponent(window.ROCA_CONFIG?.whatsappText || "Hola!");
+      return `https://wa.me/${n}?text=${text}`;
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function track(eventName, payload) {
+      window.dataLayer.push({ event: eventName, ...payload });
+    }
+
+    (function() {
+      const waUrl = buildWhatsAppLink();
+      document.querySelectorAll('a[data-cta*="whatsapp"]').forEach((a) => {
+        a.setAttribute("href", waUrl);
+        a.setAttribute("target", "_blank");
+        a.setAttribute("rel", "noopener noreferrer");
+      });
+
+      document.querySelectorAll('a[data-cta]').forEach((a) => {
+        a.addEventListener('click', () => {
+          track("cta_click", { cta: a.getAttribute('data-cta'), href: a.getAttribute('href') });
+        }, { passive: true });
+      });
+    })();
+
+    (function() {
+      const links = Array.from(document.querySelectorAll('.toc-link'));
+      const sections = links
+        .map((a) => document.querySelector(a.getAttribute('href')))
+        .filter(Boolean);
+
+      if (!sections.length) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const id = `#${entry.target.id}`;
+          links.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === id));
+        });
+      }, { rootMargin: "-30% 0px -55% 0px", threshold: 0.05 });
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>
